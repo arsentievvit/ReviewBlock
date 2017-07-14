@@ -1,0 +1,146 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+
+#wrapper {
+  width: 1400px;
+  height: 316px;
+  font-family: "Trebuchet MS Regular";
+  background-image: url(../img/bg.jpg);
+}
+
+section {
+  display: inline-block;
+  
+  height: 100px;
+  -border: 1px solid white;
+
+}
+.title {
+  text-align: center;
+  padding-top: 36px;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+}
+.title span {
+  font-size: 53px;
+  color: #3170a8;
+
+
+}
+
+.title strong {
+  color: #ee8129;
+  font-weight: normal;
+}
+
+div .review {
+  float: right;
+  width: 364px;
+  height: 100px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.secleft {
+  position: relative;
+  float:left;
+  width: 36%;
+  margin-left: 170px;
+  margin-right: 44px;
+
+}
+
+.secright {
+  position: relative;
+  float:left;
+  margin-right: 175px;
+  width: 36%;
+
+}
+
+.name, .affinity, .text {
+  margin-left: 14px;
+  margin-right: 14px; 
+  margin-top: 8px;
+  line-height: 1.25em;
+}
+
+.name, .affinity {
+  font-style: italic;
+  color: #3070a8;
+  -border: 1px solid blue;
+  margin-bottom: -8px;
+}
+
+.name {
+  float: left;
+
+}
+
+.affinity {
+  float: right;
+}
+
+.dots {
+  font-family: Arial;
+  font-size: 16px;
+  color: #666
+  padding-top: 16px;
+  text-align: center;
+}
+
+.text {
+  color: #666;
+
+}
+
+.revright::-webkit-scrollbar, .revleft::-webkit-scrollbar{
+  display: none;
+}
+
+.secleft::before {
+  content: url(../img/woman.jpg);
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+
+}
+
+.secright::before {
+  content: url(../img/man.jpg);
+  position: absolute;
+
+  left: 10px;
+  
+
+  
+
+}
+
+.secright::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 20px 16px 0;
+  border-color: transparent #fff transparent transparent;
+  top: 35%;
+  left: 125px;
+}
+
+.secleft::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 20px 16px 0;
+  border-color: transparent #fff transparent transparent;
+  top: 35%;
+  left: 125px;
+}
